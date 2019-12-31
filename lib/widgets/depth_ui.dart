@@ -249,20 +249,20 @@ class _MyHomePageState extends State<MyHomePage> {
                   onPressed: () {
                     print("start depthing");
                     var imageMap = img.copyRotate(
-                        img.decodeImage(image1.readAsBytesSync()), 90);
+                        img.decodeImage(image1.readAsBytesSync()), 0);
                     var resultImage = img.copyRotate(
-                        img.decodeImage(image1.readAsBytesSync()), 90);
+                        img.decodeImage(image1.readAsBytesSync()), 0);
                     var background = img.gaussianBlur(
                         img.copyRotate(
-                            img.decodeImage(image1.readAsBytesSync()), 90),
+                            img.decodeImage(image1.readAsBytesSync()), 0),
                         30);
                     var img1 = img.adjustColor(
                         img.grayscale(img.copyRotate(
-                            img.decodeImage(image1.readAsBytesSync()), 90)),
+                            img.decodeImage(image1.readAsBytesSync()), 0)),
                         gamma: 15);
                     var img2 = img.adjustColor(
                         img.grayscale(img.copyRotate(
-                            img.decodeImage(image2.readAsBytesSync()), 90)),
+                            img.decodeImage(image2.readAsBytesSync()), 0)),
                         gamma: 15);
                     for (var x = 0; x < resultImage.width; x++) {
                       for (var y = 0; y < resultImage.height; y++) {
